@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Displayborad</title>
+<style>
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url('./font/PressStart2P-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 80vh;
+  background-color: #493D9E; /* 背景颜色 */
+  font-family: "Press Start 2P", Arial, sans-serif; /* 使用像素字体 */
+}
+
+
+
+.popOutItem {
+ margin-top: -5rem;
+  transform: scale(0.8);
+
+}
+
+.popOutItem p{
+font-size: 8px;
+
+}
+</style>
+
+    
+  </head>
+  
+  <body>
+    <div id="app"></div>
+    <script src="//unpkg.com/@element-plus/icons-vue"></script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
