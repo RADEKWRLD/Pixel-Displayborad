@@ -16,7 +16,7 @@
 
 ### 核心算法及功能🕹️
 
-## 看板拖拽排序算法🍵⋆｡°🍡°⋆. ࿔*:･
+## 看板拖拽排序🍵⋆｡°🍡°⋆. ࿔*:･
 ```javascript
 // 使用 vuedraggable 实现看板级拖拽
 <draggable 
@@ -43,7 +43,7 @@ const throttledEnd = _.throttle(() => {
 - 通过move事件检测实现拖拽模式隔离
 - 16ms节流间隔确保60FPS流畅度
 
-## 任务项跨看板迁移算法˙✧˖°📷 ༘ ⋆｡˚
+## 任务项跨看板迁移˙✧˖°📷 ༘ ⋆｡˚
 ```javascript
 // 任务项跨看板拖拽配置
 <draggable 
@@ -63,7 +63,7 @@ const throttledItemChange = _.throttle((evt) => {
 - disabled属性实现拖拽模式互斥
 - 自动数据绑定+节流事件处理
 
-## 数据持久化算法🐱ྀི ⋆🐾° ᡣ𐭩
+## 数据持久化🐱ྀི ⋆🐾° ᡣ𐭩
 ```javascript
 // 深度监听看板数据变化
 watch(boards, (newBoards) => {
@@ -81,7 +81,7 @@ const boards = ref(JSON.parse(localStorage.getItem('boards')) || [
 - JSON序列化/反序列化处理复杂数据结构
 - 异常处理：当本地存储为空时初始化默认结构
 
-## 时间处理算法𐙚 ˚🍰 ⋆｡˚ ᡣ𐭩
+## 时间处理𐙚 ˚🍰 ⋆｡˚ ᡣ𐭩
 ```javascript
 // 时间范围选择器绑定
 <el-date-picker 
@@ -104,7 +104,7 @@ endTime: timeRange.value[1] || ''
 - 按需进行日期格式转换
 - 空值处理保证数据完整性
 
-## 状态管理算法🎸⋆⭒˚｡⋆
+## 状态管理🎸⋆⭒˚｡⋆
 ```javascript
 // 紧急程度映射表
 const urgencyLabels = {
